@@ -8,20 +8,20 @@ const HeaderComponet = () => {
       <div>
         <ul>
           <li>
-            <img src={logo} alt="Girl in a jacket" width="75" height="55" />
+            <img src={logo} alt="logo" width="75" height="55" />
           </li>
           <li className={styles.liParrafo }>
-            <p>Sentite como en tu hogar</p>
+            <p>Sentite como en tu hogar🏠</p>
           </li>
         </ul>
       </div>
       <div>
         <ul>
           <li>
-            <button>Registrarse</button>
+            <button className={styles.btnReg}>Registrarse</button>
           </li>
           <li>
-            <button>Iniciar sesión</button>
+            <button className={styles.btnSignin}>Iniciar sesión</button>
           </li>
         </ul>
       </div>
