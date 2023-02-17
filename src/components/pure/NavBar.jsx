@@ -1,5 +1,7 @@
 import React from "react";
-import styles from "../style/navBar.module.css";
+import  "../style/navBar.css";
+import DatePicker from '../utils/DatePicker'
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -8,7 +10,7 @@ const Navbar = () => {
       <div>
         <div>
           <select>
-            <option className={styles.options} value="" disabled selected >📌A donde vamos?</option>
+            <option className="options" defaultValue={""} disabled selected >📌A donde vamos?</option>
             <option value="0">📍Buenos Aires - AR</option>
             <option value="1">📍Medellín - CO</option>
             <option value="2">📍Punta Cana - PR</option>            
@@ -17,14 +19,11 @@ const Navbar = () => {
             <option value="5">📍Rio de Janeiro - BR</option>
           </select>          
         </div>
-        <div>
-            <label className={styles.checkInLabel} htmlFor="text">Check-In</label>
-            <input className={styles.checkIn} type="date" ></input>
-            <label className={styles.checkOutLabel} htmlFor="text">Check-Out</label>
-            <input className={styles.checkOut} type="date" ></input>
+        <div className="date-div">
+          <DatePicker />
         </div>        
       </div>
-      <button className={styles.btnBuscar}>Buscar</button>
+      <Link to="/cards"><button className="btnBuscar">Buscar</button></Link>
     </nav>
   );
 };

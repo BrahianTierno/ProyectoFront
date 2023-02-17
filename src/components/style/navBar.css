@@ -28,6 +28,11 @@ select{
     right: 55.5rem;
     color: black;
     font-size: medium;
+    cursor: pointer;
+}
+
+select:hover{
+    background-color: #ffffffb4;
 }
 
 .options{
@@ -37,47 +42,25 @@ select{
     font-size: medium;
 }
 
-label{
-    position: relative;
-    color: white;
-    font-weight: 700;
-    top: 1rem;
-    left: 34rem;
-}
-
-.checkOutLabel{
-    left: 50rem;
-}
-
-.checkIn, .checkOut{
+.date-div{
     display: flex;
+    align-content: center;
     justify-content: center;
-    text-align: center;
     align-items: center;
-    position: absolute;
-    border-radius: 6%;
-    width: 20rem;
-    height: 2.5rem;
-    top: 5rem;
-    color: black;
-    font-size: medium;
+    position: relative;
+    top: 2rem;
+    left: 3rem;
 }
 
-.checkIn{
-    right: 33rem;
-}
-
-.checkOut{
-    right: 13rem;
-}
 
 .btnBuscar{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 1.2rem;
-    left: 63rem;
+    bottom: 1rem;
+    top: auto;
+    left: 60rem;
     margin-left: 5rem;
     border-radius: 8%;
     background-color: #1DBEB4;
@@ -94,4 +77,21 @@ label{
     transform: scale(1.1);
     background-color: #8efaf3;
     color: black;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    nav{
+        width: 114%;
+    }
+
+    .btnBuscar{
+        left: 32rem;
+    }
 }
